@@ -1,13 +1,13 @@
-# 🧠 Human Activity Recognition using Machine Learning and LSTM
+# Human Activity Recognition using Machine Learning and LSTM
 
-## 📌 Overview
+## Overview
 This project develops and evaluates machine learning and deep learning models for **Human Activity Recognition (HAR)** using smartphone sensor data from the UCI HAR dataset.
 
 The goal is to classify human activities such as walking, sitting, and standing based on time-series signals captured from accelerometers and gyroscopes.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Build classification models for activity recognition
 - Compare traditional ML models with deep learning (LSTM)
 - Evaluate model performance using classification metrics
@@ -16,7 +16,7 @@ The goal is to classify human activities such as walking, sitting, and standing 
 
 ---
 
-## 📊 Dataset
+## Dataset
 - **Source:** UCI Human Activity Recognition Dataset  
 - **Features:** Sensor signals (accelerometer & gyroscope)  
 - **Target Classes:**
@@ -29,14 +29,14 @@ The goal is to classify human activities such as walking, sitting, and standing 
 
 ---
 
-## ⚙️ Models Implemented
+## Models Implemented
 - Logistic Regression
 - Random Forest
 - Long Short-Term Memory (LSTM)
 
 ---
 
-## 🧪 Model Performance
+## Model Performance
 
 | Model               | Accuracy |
 |--------------------|---------|
@@ -44,17 +44,18 @@ The goal is to classify human activities such as walking, sitting, and standing 
 | Random Forest      | ~91%    |
 | LSTM               | ~92%    |
 
-👉 The LSTM model achieved the best performance by capturing temporal dependencies in the sensor data.
+Logistic Regression achieved the highest accuracy (~93%), followed closely by LSTM (~92%) and Random Forest (~91%).
 
+Despite the ability of LSTM models to capture temporal dependencies, the strong performance of Logistic Regression suggests that the dataset's pre-processed and feature-engineered structure already captures sufficient information for classification, reducing the advantage of deep learning models.
 ---
 
-## 📈 Results
+## Results
 
-### 🔹 Confusion Matrix (LSTM)
+### Confusion Matrix (LSTM)
 
 ![Confusion Matrix](results/confusion_matrix.png)
 
-### 🔍 Key Insights
+### Key Insights
 - High classification accuracy across all activities
 - Minor confusion between:
   - **SITTING vs STANDING** (similar stationary patterns)
@@ -73,21 +74,21 @@ Minor misclassifications occur between:
 These results indicate that the model effectively captures temporal patterns in human activity data, while highlighting expected challenges in distinguishing closely related movements.
 ---
 
-## 🧠 Technical Approach
+## Technical Approach
 
-### 🔹 Data Processing
+### Data Processing
 - Label encoding for activity classes
 - Feature scaling and normalization
 - Train-test split
 
-### 🔹 Deep Learning (LSTM)
+### Deep Learning (LSTM)
 - Sequential model architecture
 - Dense + Dropout layers for regularization
 - Optimized using Adam optimizer
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 - Python
 - NumPy, Pandas
 - Scikit-learn
