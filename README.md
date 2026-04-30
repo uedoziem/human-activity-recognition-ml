@@ -40,9 +40,9 @@ The goal is to classify human activities such as walking, sitting, and standing 
 
 | Model               | Accuracy |
 |--------------------|---------|
-| Logistic Regression| ~XX%    |
-| Random Forest      | ~XX%    |
-| LSTM               | ~XX%    |
+| Logistic Regression| ~93%    |
+| Random Forest      | ~91%    |
+| LSTM               | ~92%    |
 
 👉 The LSTM model achieved the best performance by capturing temporal dependencies in the sensor data.
 
